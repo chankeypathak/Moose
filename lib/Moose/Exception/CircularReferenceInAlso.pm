@@ -1,7 +1,7 @@
 package Moose::Exception::CircularReferenceInAlso;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'also_parameter' => (
     is       => 'ro',

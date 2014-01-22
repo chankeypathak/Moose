@@ -1,8 +1,7 @@
 package Moose::Exception::CannotOverrideALocalMethod;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Role';
+with 'Moose::Exception::Role::Role', 'Moose::Exception';
 
 has 'method_name' => (
     is       => 'ro',

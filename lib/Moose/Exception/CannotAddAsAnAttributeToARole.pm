@@ -1,8 +1,7 @@
 package Moose::Exception::CannotAddAsAnAttributeToARole;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Role';
+with 'Moose::Exception::Role::Role', 'Moose::Exception';
 
 has 'attribute_class' => (
     is       => 'ro',

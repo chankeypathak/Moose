@@ -1,8 +1,7 @@
 package Moose::Exception::InstanceBlessedIntoWrongClass;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::ParamsHash', 'Moose::Exception::Role::Class', 'Moose::Exception::Role::Instance';
+with 'Moose::Exception::Role::ParamsHash', 'Moose::Exception::Role::Class', 'Moose::Exception::Role::Instance', 'Moose::Exception';
 
 sub _build_message {
     my $self = shift;

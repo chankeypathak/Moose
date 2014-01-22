@@ -1,7 +1,7 @@
 package Moose::Exception::CannotFindType;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'type_name' => (
     is       => 'ro',

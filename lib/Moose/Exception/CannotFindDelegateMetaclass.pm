@@ -1,8 +1,7 @@
 package Moose::Exception::CannotFindDelegateMetaclass;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Attribute';
+with 'Moose::Exception::Role::Attribute', 'Moose::Exception';
 
 sub _build_message {
     my $self = shift;

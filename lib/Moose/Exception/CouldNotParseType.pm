@@ -1,7 +1,7 @@
 package Moose::Exception::CouldNotParseType;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'type' => (
     is       => 'ro',

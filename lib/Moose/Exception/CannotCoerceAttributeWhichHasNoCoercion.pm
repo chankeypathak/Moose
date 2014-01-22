@@ -1,8 +1,7 @@
 package Moose::Exception::CannotCoerceAttributeWhichHasNoCoercion;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::InvalidAttributeOptions', 'Moose::Exception::Role::TypeConstraint';
+with 'Moose::Exception::Role::InvalidAttributeOptions', 'Moose::Exception::Role::TypeConstraint', 'Moose::Exception';
 
 sub _build_message {
     my $self = shift;

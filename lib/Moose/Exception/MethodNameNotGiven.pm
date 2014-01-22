@@ -1,8 +1,7 @@
 package Moose::Exception::MethodNameNotGiven;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 sub _build_message {
     "You must define a method name to find";

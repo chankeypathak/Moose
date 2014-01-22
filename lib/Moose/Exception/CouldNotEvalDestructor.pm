@@ -1,7 +1,7 @@
 package Moose::Exception::CouldNotEvalDestructor;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'method_destructor_object' => (
     is       => 'ro',

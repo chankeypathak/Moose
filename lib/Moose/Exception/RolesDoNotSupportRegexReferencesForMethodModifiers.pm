@@ -1,8 +1,7 @@
 package Moose::Exception::RolesDoNotSupportRegexReferencesForMethodModifiers;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Role';
+with 'Moose::Exception::Role::Role', 'Moose::Exception';
 
 has 'modifier_type' => (
     is       => 'ro',

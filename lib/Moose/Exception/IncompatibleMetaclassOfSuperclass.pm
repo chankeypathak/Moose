@@ -2,8 +2,7 @@
 package Moose::Exception::IncompatibleMetaclassOfSuperclass;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 has [qw/superclass_name superclass_meta_type/] => (
     is       => 'ro',

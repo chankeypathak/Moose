@@ -1,8 +1,7 @@
 package Moose::Exception::AddRoleTakesAMooseMetaRoleInstance;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 has 'role_to_be_added' => (
     is       => 'ro',

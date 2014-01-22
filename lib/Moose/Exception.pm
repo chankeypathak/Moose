@@ -1,6 +1,6 @@
 package Moose::Exception;
 
-use Moose;
+use MooseX::Role::WithOverloading;
 use Devel::StackTrace;
 
 has 'trace' => (

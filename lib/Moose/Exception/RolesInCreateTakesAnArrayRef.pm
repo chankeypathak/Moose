@@ -1,8 +1,7 @@
 package Moose::Exception::RolesInCreateTakesAnArrayRef;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::ParamsHash';
+with 'Moose::Exception::Role::ParamsHash', 'Moose::Exception';
 
 sub _build_message {
     my $self = shift;

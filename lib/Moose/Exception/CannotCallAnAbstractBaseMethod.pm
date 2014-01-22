@@ -1,7 +1,7 @@
 package Moose::Exception::CannotCallAnAbstractBaseMethod;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'package_name' => (
     is       => 'ro',

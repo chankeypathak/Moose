@@ -1,7 +1,7 @@
 package Moose::Exception::MustSpecifyAtleastOneRoleToApplicant;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'applicant' => (
     is       => 'ro',

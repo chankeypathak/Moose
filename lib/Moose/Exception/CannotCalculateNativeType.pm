@@ -1,8 +1,7 @@
 package Moose::Exception::CannotCalculateNativeType;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Instance';
+with 'Moose::Exception::Role::Instance', 'Moose::Exception';
 
 sub _build_message {
     my $self = shift;

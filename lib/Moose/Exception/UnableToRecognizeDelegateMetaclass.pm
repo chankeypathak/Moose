@@ -1,8 +1,7 @@
 package Moose::Exception::UnableToRecognizeDelegateMetaclass;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Attribute';
+with 'Moose::Exception::Role::Attribute', 'Moose::Exception';
 
 has 'delegate_metaclass' => (
     is       => 'ro',

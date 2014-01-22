@@ -1,7 +1,7 @@
 package Moose::Exception::EnumCalledWithAnArrayRefAndAdditionalArgs;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'array' => (
     is       => 'ro',

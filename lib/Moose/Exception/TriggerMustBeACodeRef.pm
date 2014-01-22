@@ -1,8 +1,7 @@
 package Moose::Exception::TriggerMustBeACodeRef;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::InvalidAttributeOptions';
+with 'Moose::Exception::Role::InvalidAttributeOptions', 'Moose::Exception';
 
 sub _build_message {
     my $self = shift;

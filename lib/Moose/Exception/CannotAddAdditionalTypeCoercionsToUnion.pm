@@ -1,7 +1,7 @@
 package Moose::Exception::CannotAddAdditionalTypeCoercionsToUnion;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'type_coercion_union_object' => (
     is       => 'ro',

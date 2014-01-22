@@ -1,8 +1,7 @@
 package Moose::Exception::AttributeConflictInSummation;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Role', 'Moose::Exception::Role::AttributeName';
+with 'Moose::Exception::Role::Role', 'Moose::Exception::Role::AttributeName', 'Moose::Exception';
 
 has 'second_role' => (
     is         => 'ro',

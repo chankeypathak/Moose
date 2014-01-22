@@ -1,8 +1,7 @@
 package Moose::Exception::RequiredMethodsImportedByClass;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class', 'Moose::Exception::Role::Role';
+with 'Moose::Exception::Role::Class', 'Moose::Exception::Role::Role', 'Moose::Exception';
 
 has 'missing_methods' => (
     traits   => ['Array'],

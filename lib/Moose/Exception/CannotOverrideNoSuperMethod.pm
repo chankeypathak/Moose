@@ -1,8 +1,7 @@
 package Moose::Exception::CannotOverrideNoSuperMethod;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::ParamsHash';
+with 'Moose::Exception::Role::ParamsHash', 'Moose::Exception';
 
 has 'method_name' => (
     is       => 'ro',

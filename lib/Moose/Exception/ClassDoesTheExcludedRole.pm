@@ -1,8 +1,7 @@
 package Moose::Exception::ClassDoesTheExcludedRole;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Role', 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Role', 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 has 'excluded_role' => (
     is       => 'ro',

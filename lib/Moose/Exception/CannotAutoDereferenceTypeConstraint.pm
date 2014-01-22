@@ -1,8 +1,7 @@
 package Moose::Exception::CannotAutoDereferenceTypeConstraint;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Attribute', 'Moose::Exception::Role::Instance', 'Moose::Exception::Role::TypeConstraint';
+with 'Moose::Exception::Role::Attribute', 'Moose::Exception::Role::Instance', 'Moose::Exception::Role::TypeConstraint', 'Moose::Exception';
 
 sub _build_message {
     my $self = shift;

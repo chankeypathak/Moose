@@ -1,7 +1,7 @@
 package Moose::Exception::IllegalMethodTypeToAddMethodModifier;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'class_or_object' => (
     is       => 'ro',

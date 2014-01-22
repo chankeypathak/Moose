@@ -1,7 +1,7 @@
 package Moose::Exception::MetaclassMustBeDerivedFromClassMOPClass;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'class_name' => (
     is       => 'ro',

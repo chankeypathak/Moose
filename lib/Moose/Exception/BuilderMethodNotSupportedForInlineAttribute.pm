@@ -1,8 +1,7 @@
 package Moose::Exception::BuilderMethodNotSupportedForInlineAttribute;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Instance', 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Instance', 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 has 'attribute_name' => (
     is       => 'ro',

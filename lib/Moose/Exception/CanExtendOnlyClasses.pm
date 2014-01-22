@@ -1,7 +1,7 @@
 package Moose::Exception::CanExtendOnlyClasses;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'role' => (
     is       => 'ro',

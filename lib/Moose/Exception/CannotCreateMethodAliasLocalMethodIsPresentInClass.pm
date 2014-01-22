@@ -1,8 +1,7 @@
 package Moose::Exception::CannotCreateMethodAliasLocalMethodIsPresentInClass;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Role', 'Moose::Exception::Role::Method', 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Role', 'Moose::Exception::Role::Method', 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 has 'aliased_method_name' => (
     is       => 'ro',

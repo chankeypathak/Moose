@@ -1,8 +1,7 @@
 package Moose::Exception::MustDefineAMethodName;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Instance';
+with 'Moose::Exception::Role::Instance', 'Moose::Exception';
 
 sub _build_message {
     "You must define a method name";

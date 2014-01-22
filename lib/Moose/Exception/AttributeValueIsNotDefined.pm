@@ -1,8 +1,7 @@
 package Moose::Exception::AttributeValueIsNotDefined;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Instance', 'Moose::Exception::Role::Attribute';
+with 'Moose::Exception::Role::Instance', 'Moose::Exception::Role::Attribute', 'Moose::Exception';
 
 has 'method' => (
     is       => 'ro',

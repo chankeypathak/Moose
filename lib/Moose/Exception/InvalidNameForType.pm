@@ -1,7 +1,7 @@
 package Moose::Exception::InvalidNameForType;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'name' => (
     is       => 'ro',

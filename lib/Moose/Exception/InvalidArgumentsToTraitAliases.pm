@@ -1,8 +1,7 @@
 package Moose::Exception::InvalidArgumentsToTraitAliases;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 use Scalar::Util qw(reftype);
 

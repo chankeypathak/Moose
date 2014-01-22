@@ -1,7 +1,6 @@
 package Moose::Exception::UnionCalledWithAnArrayRefAndAdditionalArgs;
 
 use Moose;
-extends 'Moose::Exception';
 
 has 'array' => (
     is       => 'ro',
@@ -16,7 +15,7 @@ has 'args' => (
 );
 
 sub _build_message {
-    "union called with an array reference and additional arguments";
+    "union called with an array reference and additional arguments", 'Moose::Exception';
 }
 
 1;

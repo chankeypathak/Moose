@@ -1,8 +1,7 @@
 package Moose::Exception::WrongTypeConstraintGiven;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::ParamsHash';
+with 'Moose::Exception::Role::ParamsHash', 'Moose::Exception';
 
 has [qw/required_type given_type attribute_name/] => (
     is       => 'ro',

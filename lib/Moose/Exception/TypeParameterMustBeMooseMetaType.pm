@@ -1,8 +1,7 @@
 package Moose::Exception::TypeParameterMustBeMooseMetaType;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::TypeConstraint';
+with 'Moose::Exception::Role::TypeConstraint', 'Moose::Exception';
 
 sub _build_message {
     "The type parameter must be a Moose meta type";

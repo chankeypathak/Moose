@@ -1,8 +1,7 @@
 package Moose::Exception::IllegalInheritedOptions;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::ParamsHash';
+with 'Moose::Exception::Role::ParamsHash', 'Moose::Exception';
 
 has 'illegal_options' => (
     is       => 'ro',

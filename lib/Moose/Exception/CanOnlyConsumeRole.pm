@@ -1,7 +1,7 @@
 package Moose::Exception::CanOnlyConsumeRole;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'role_name' => (
     is       => 'ro',

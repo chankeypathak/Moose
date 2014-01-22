@@ -1,7 +1,7 @@
 package Moose::Exception::UndefinedHashKeysPassedToMethod;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'hash_keys' => (
     is         => 'ro',

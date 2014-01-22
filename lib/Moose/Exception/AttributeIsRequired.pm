@@ -1,8 +1,7 @@
 package Moose::Exception::AttributeIsRequired;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 use Moose::Util 'throw_exception';
 

@@ -1,8 +1,7 @@
 package Moose::Exception::CannotDelegateLocalMethodIsPresent;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Attribute', 'Moose::Exception::Role::Method';
+with 'Moose::Exception::Role::Attribute', 'Moose::Exception::Role::Method', 'Moose::Exception';
 
 sub _build_message {
     my $self = shift;

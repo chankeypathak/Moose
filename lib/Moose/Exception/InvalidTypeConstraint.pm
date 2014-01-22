@@ -1,7 +1,7 @@
 package Moose::Exception::InvalidTypeConstraint;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'registry_object' => (
     is       => 'ro',

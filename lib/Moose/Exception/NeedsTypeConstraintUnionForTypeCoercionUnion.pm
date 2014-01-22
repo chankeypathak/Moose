@@ -1,8 +1,7 @@
 package Moose::Exception::NeedsTypeConstraintUnionForTypeCoercionUnion;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::TypeConstraint';
+with 'Moose::Exception::Role::TypeConstraint', 'Moose::Exception';
 
 has 'type_coercion_union_object' => (
     is       => 'ro',

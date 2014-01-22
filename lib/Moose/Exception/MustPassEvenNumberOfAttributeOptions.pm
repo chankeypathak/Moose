@@ -1,7 +1,7 @@
 package Moose::Exception::MustPassEvenNumberOfAttributeOptions;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'options' => (
     is       => 'ro',

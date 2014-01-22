@@ -1,7 +1,7 @@
 package Moose::Exception::CannotFindTypeGivenToMatchOnType;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'to_match' => (
     is       => 'ro',

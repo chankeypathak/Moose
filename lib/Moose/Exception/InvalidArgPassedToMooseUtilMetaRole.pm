@@ -1,7 +1,7 @@
 package Moose::Exception::InvalidArgPassedToMooseUtilMetaRole;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'argument' => (
     is       => 'ro',

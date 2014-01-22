@@ -1,8 +1,7 @@
 package Moose::Exception::PackagesAndModulesAreNotCachable;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class', 'Moose::Exception::Role::ParamsHash';
+with 'Moose::Exception::Role::Class', 'Moose::Exception::Role::ParamsHash', 'Moose::Exception';
 
 has 'is_module' => (
     is       => 'ro',

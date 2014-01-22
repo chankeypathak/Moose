@@ -1,8 +1,7 @@
 package Moose::Exception::OnlyInstancesCanBeCloned;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class', 'Moose::Exception::Role::ParamsHash';
+with 'Moose::Exception::Role::Class', 'Moose::Exception::Role::ParamsHash', 'Moose::Exception';
 
 has 'instance' => (
     is       => 'ro',

@@ -1,8 +1,7 @@
 package Moose::Exception::LazyAttributeNeedsADefault;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::EitherAttributeOrAttributeName';
+with 'Moose::Exception::Role::EitherAttributeOrAttributeName', 'Moose::Exception';
 
 sub _build_message {
     my $self = shift;

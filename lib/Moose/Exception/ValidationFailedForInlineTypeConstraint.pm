@@ -1,8 +1,7 @@
 package Moose::Exception::ValidationFailedForInlineTypeConstraint;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 has 'type_constraint_message' => (
     is       => 'ro',

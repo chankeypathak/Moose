@@ -1,8 +1,7 @@
 package Moose::Exception::CannotGenerateInlineConstraint;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::TypeConstraint';
+with 'Moose::Exception::Role::TypeConstraint', 'Moose::Exception';
 
 has 'parameterizable_type_object' => (
     is       => 'ro',

@@ -1,7 +1,7 @@
 package Moose::Exception::CannotInitializeMooseMetaRoleComposite;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'role_composite' => (
     is       => 'ro',

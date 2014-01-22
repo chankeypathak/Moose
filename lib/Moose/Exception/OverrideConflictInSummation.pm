@@ -1,7 +1,7 @@
 package Moose::Exception::OverrideConflictInSummation;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'role_application' => (
     is       => 'ro',

@@ -1,8 +1,7 @@
 package Moose::Exception::CouldNotCreateWriter;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::EitherAttributeOrAttributeName', 'Moose::Exception::Role::Instance';
+with 'Moose::Exception::Role::EitherAttributeOrAttributeName', 'Moose::Exception::Role::Instance', 'Moose::Exception';
 
 has 'error' => (
     is       => 'ro',

@@ -1,7 +1,7 @@
 package Moose::Exception::TypeNamesDoNotMatch;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has type_name => (
     is       => 'ro',

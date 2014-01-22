@@ -1,7 +1,7 @@
 package Moose::Exception::PackageDoesNotUseMooseExporter;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'package' => (
     is       => 'ro',

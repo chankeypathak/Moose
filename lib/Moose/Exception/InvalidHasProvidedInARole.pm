@@ -1,8 +1,7 @@
 package Moose::Exception::InvalidHasProvidedInARole;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Role';
+with 'Moose::Exception::Role::Role', 'Moose::Exception';
 
 has 'attribute_name' => (
     is       => 'ro',

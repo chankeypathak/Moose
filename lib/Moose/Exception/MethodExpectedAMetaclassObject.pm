@@ -1,7 +1,7 @@
 package Moose::Exception::MethodExpectedAMetaclassObject;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'class' => (
     is       => 'ro',

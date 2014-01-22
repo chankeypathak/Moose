@@ -1,7 +1,7 @@
 package Moose::Exception::NoBodyToInitializeInAnAbstractBaseClass;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'package_name' => (
     is       => 'ro',

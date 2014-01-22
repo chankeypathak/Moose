@@ -1,7 +1,7 @@
 package Moose::Exception::CannotCallAnAbstractMethod;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 sub _build_message {
     "Abstract method";

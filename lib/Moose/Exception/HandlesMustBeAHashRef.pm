@@ -1,8 +1,7 @@
 package Moose::Exception::HandlesMustBeAHashRef;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Instance';
+with 'Moose::Exception::Role::Instance', 'Moose::Exception';
 
 has 'given_handles' => (
     is       => 'ro',

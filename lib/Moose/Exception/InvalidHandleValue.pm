@@ -1,8 +1,7 @@
 package Moose::Exception::InvalidHandleValue;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Instance';
+with 'Moose::Exception::Role::Instance', 'Moose::Exception';
 
 has 'handle_value' => (
     is       => 'ro',

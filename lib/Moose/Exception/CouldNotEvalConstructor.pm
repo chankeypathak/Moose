@@ -1,7 +1,7 @@
 package Moose::Exception::CouldNotEvalConstructor;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'constructor_method' => (
     is       => 'ro',

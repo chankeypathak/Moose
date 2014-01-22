@@ -1,8 +1,7 @@
 package Moose::Exception::MetaclassIsNotASubclassOfGivenMetaclass;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class';
+with 'Moose::Exception::Role::Class', 'Moose::Exception';
 
 has 'metaclass' => (
     is       => 'ro',

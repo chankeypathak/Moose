@@ -1,8 +1,7 @@
 package Moose::Exception::CannotAssignValueToReadOnlyAccessor;
 
 use Moose;
-extends 'Moose::Exception';
-with 'Moose::Exception::Role::Class', 'Moose::Exception::Role::EitherAttributeOrAttributeName';
+with 'Moose::Exception::Role::Class', 'Moose::Exception::Role::EitherAttributeOrAttributeName', 'Moose::Exception';
 
 has 'value' => (
     is       => 'ro',

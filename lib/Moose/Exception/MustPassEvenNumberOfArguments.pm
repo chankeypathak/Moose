@@ -1,7 +1,7 @@
 package Moose::Exception::MustPassEvenNumberOfArguments;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 has 'args' => (
     is         => 'ro',

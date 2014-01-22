@@ -1,6 +1,6 @@
 package Moose::Exception::Legacy;
 
 use Moose;
-extends 'Moose::Exception';
+with 'Moose::Exception';
 
 1;
